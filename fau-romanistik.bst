@@ -164,16 +164,16 @@ FUNCTION {space.word}
  % Each function has a name bbl.xxx where xxx is the English word.
  % The language selected here is ENGLISH
 FUNCTION {bbl.and}
-{ "and"}
+{ "und"}
 
 FUNCTION {bbl.etal}
 { "et~al." }
 
 FUNCTION {bbl.editors}
-{ "eds." }
+{ "hrsg." }
 
 FUNCTION {bbl.editor}
-{ "ed." }
+{ "hrsg." }
 
 FUNCTION {bbl.edby}
 { "edited by" }
@@ -182,28 +182,28 @@ FUNCTION {bbl.edition}
 { "ed." }
 
 FUNCTION {bbl.volume}
-{ "vol." }
+{ "band." }
 
 FUNCTION {bbl.of}
-{ "of" }
+{ "von" }
 
 FUNCTION {bbl.number}
-{ "no." }
+{ "nr." }
 
 FUNCTION {bbl.nr}
-{ "no." }
+{ "nr." }
 
 FUNCTION {bbl.in}
 { "in" }
 
 FUNCTION {bbl.pages}
-{ "pp." }
+{ "S." }
 
 FUNCTION {bbl.page}
-{ "p." }
+{ "S." }
 
 FUNCTION {bbl.chapter}
-{ "chap." }
+{ "Kap." }
 
 FUNCTION {bbl.techrep}
 { "Tech. Rep." }
@@ -218,11 +218,11 @@ MACRO {jan} {"Jan."}
 
 MACRO {feb} {"Feb."}
 
-MACRO {mar} {"Mar."}
+MACRO {mar} {"Mär."}
 
 MACRO {apr} {"Apr."}
 
-MACRO {may} {"May"}
+MACRO {may} {"Mai"}
 
 MACRO {jun} {"Jun."}
 
@@ -232,11 +232,11 @@ MACRO {aug} {"Aug."}
 
 MACRO {sep} {"Sep."}
 
-MACRO {oct} {"Oct."}
+MACRO {oct} {"Okt."}
 
 MACRO {nov} {"Nov."}
 
-MACRO {dec} {"Dec."}
+MACRO {dec} {"Dez."}
 
 MACRO {acmcs} {"ACM Computing Surveys"}
 
@@ -1013,7 +1013,6 @@ FUNCTION {inproceedings}
     { format.in.ed.booktitle "booktitle" output.check
       format.bvolume output
       format.number.series output
-      format.pages output
       new.sentence
       publisher empty$
         { format.organization.address output }
@@ -1021,6 +1020,7 @@ FUNCTION {inproceedings}
           format.publisher.address output
         }
       if$
+      format.pages output
     }
     { format.incoll.inproc.crossref output.nonnull
       format.pages output
