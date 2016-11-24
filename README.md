@@ -7,6 +7,16 @@ This is a Latex/Bibtex Template fpr the FAU Romanistik Institute.
 - Latex
 - Bibtex
 
+# IPA
+
+To use symbols of the International Phonetic Alphabet use the *\ipa{}* command.
+A reference for using the symbols can be found in **tipachart.pdf**.
+
+```latex
+% Example
+\ipa{[Tis N2]}
+```
+
 # Bibtex Style
 
 The Bibtex Style is designed to comply with the [FAU Romanistik Stilblatt](https://www.romanistik.phil.fau.de/studium/stilblatt/).
