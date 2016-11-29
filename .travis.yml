@@ -1,7 +1,7 @@
 language: bash
 
-install:
-    - apt-get install -y lacheck
+before_install:
+    - sudo apt-get install -y lacheck
 
 script:
   - bash lint.sh
