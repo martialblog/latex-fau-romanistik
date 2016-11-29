@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/martialblog/latex-fau-romanistik.svg?branch=master)](https://travis-ci.org/martialblog/latex-fau-romanistik)
+
 # Latex Template for FAU Romanistik Institute
 
 This is a Latex/Bibtex Template fpr the FAU Romanistik Institute.
