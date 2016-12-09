@@ -23,6 +23,8 @@ A reference for using the symbols can be found in **tipachart.pdf**.
 
 The Bibtex Style is designed to comply with the [FAU Romanistik Stilblatt](https://www.romanistik.phil.fau.de/studium/stilblatt/).
 
+![Latex Comic](latex.jpg?raw=true "Latex Comic")
+
 ## Bibtex Entry Types
 
 ### @article
